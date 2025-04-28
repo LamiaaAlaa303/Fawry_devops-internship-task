@@ -1,0 +1,16 @@
+Reflective Answers for Q1
+
+Breakdown of Argument and Option Handling:
+ The script uses a while loop to parse arguments, handling options (-n, -v, -vn, -nv, --help) 
+ via a case statement. Non-option arguments are assigned to pattern and filename, with 
+ validation for missing arguments and file readability.
+
+Supporting Regex or -i/-c/-l Options:
+ For regex, I’d modify grep -qi to grep -E. For -i, the script already uses
+  grep -qi. For -c, I’d add a counter for matching lines. For -l, I’d print the
+   filename if a match is found.
+   
+
+Hardest Part:
+ Handling the -vn and -nv combinations was challenging, but I 
+ addressed it by explicitly checking both cases in the case statement.
